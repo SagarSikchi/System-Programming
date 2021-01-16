@@ -18,15 +18,15 @@ Types of Interpreter are -
 - **Pure Interpreter:** In this case no preprocessing is required on source program before an interpretation starts.
 - **Non-pure Interpreter:** Some preprocessing is required on source program before an interpretation starts.
 
-Checkout the [**_Math Interpreter_**]() which I implemented.
+Checkout the [**_Math Interpreter_**](https://github.com/SagarSikchi/Math-Interpreter-using-Python) which I implemented.
 
-### [2. Assembler]()
+### [2. Assembler](https://github.com/SagarSikchi/System-Programming/tree/main/2_Assembler_Pass_I_and_Pass_II)
 
 These are the system programs which will automatically translate the assembly language program in to the machine language program.
 
 **Cross Assembler:** These are the system programs which will automatically translate the assembly level language program compatible with machine **A** into a machine level language program compatible with the machine **B**.
 
-In this course, I have implemented the **Pass I** and **Pass II** of the assembler. For this, first we need to know the [**_Symbol Table_**](). Symbol table is the table which stores the literals and symbols which are defined in the system programs. This table is machine independent and used for solving the **Forward Reference** problem in the assembler. **Forward Reference** is the problem which arises when a variable is used before its declaration in the program. For example,
+In this course, I have implemented the **Pass I** and **Pass II** of the assembler. For this, first we need to know the [**_Symbol Table_**](https://github.com/SagarSikchi/System-Programming/tree/main/1_Symbol_Table_Generation). Symbol table is the table which stores the literals and symbols which are defined in the system programs. This table is machine independent and used for solving the **Forward Reference** problem in the assembler. **Forward Reference** is the problem which arises when a variable is used before its declaration in the program. For example,
         
         LOAD A, FOUR
         LOAD B, 10
@@ -43,7 +43,7 @@ These are the system programs which will automatically translate the High level 
 
 Compiler has the following six phases:
 
-- [**Lexical Analyser:**]() It is the phase where the lexims are created and tokens(collection of the similar lexims) are generated.
+- [**Lexical Analyser:**](https://github.com/SagarSikchi/System-Programming/tree/main/5_Lexical_Analyser) It is the phase where the lexims are created and tokens(collection of the similar lexims) are generated.
 - **Syntax Analyser:** It is the tokenization process. The parse tree is generated using different types of the parsers and syntax of the expression is verified.
 - **Semantic Analyser:** Meaning of the expression is verified using context-free grammar rules and productions.
 - **Intermediate Code Generator:** Simplified code is generated in the assembly language.
@@ -51,7 +51,7 @@ Compiler has the following six phases:
 - **Final Code Generator:** Final optimized machine level code is generated.
 
 
-### [4. Macros and Nested Macros]()
+### [4. Macros and Nested Macros](https://github.com/SagarSikchi/System-Programming/tree/main/3_Macro_and_Nested_Macro)
 
 A **Macro** instruction is the notational convenience for the programmer. For every occurrence of macro the whole macro body or macro block of statements gets expanded in the main source code. Thus Macro instructions make writing code more convenient. Salient features of Macro Processor: 
 - Macro represents a group of commonly used statements in the source programming language.
@@ -95,7 +95,7 @@ Some widely used debuggers are:
 - WDW, the OpenWatcom debugger
 - WinDbg
 
-### [7. Loader and Linker]()
+### [7. Loader and Linker](https://github.com/SagarSikchi/System-Programming/tree/main/4_Loader_and_Linker)
 
 A **Loader** is the system program that place the object program into main memory and prepares it for execution. The loader is special program that takes input of object code from linker, loads it to main memory, and prepares this code for execution by computer. Loader allocates memory space to program. Even it settles down symbolic reference between objects. It in charge of loading programs and libraries in operating system. The embedded computer systems don’t have loaders. In them, code is executed through ROM.
 Basic functions of loader:

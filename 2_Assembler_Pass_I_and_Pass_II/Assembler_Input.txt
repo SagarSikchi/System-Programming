@@ -1,0 +1,25 @@
+Read N
+Load zero
+Store count
+Loop: Store sum
+Vit: Store sum
+Read X
+Load X
+Add sum
+Store sum
+Load count
+Add one
+Store count
+Sub N
+Jz Outer
+Jmp Loop
+Outer: Write sum
+Stop
+Endp
+zero Const
+one Const
+sum Db
+count Db
+N Db
+X Db
+END

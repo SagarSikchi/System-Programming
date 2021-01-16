@@ -62,12 +62,12 @@ A **Macro** instruction is the notational convenience for the programmer. For ev
 
 **Nested Macros** are the macros within the macros. Macro is a single line abbreviation for a group of instruction.
 
-      MACRO	-------->  Start of definition
-      INCR  -------->  Macro name
+      MACRO	--------> Start of definition
+      INCR  --------> Macro name
        A 1,DATA
-       A 2,DATA	 ---> Sequence of instructions to be abbreviated.
+       A 2,DATA --> Sequence of instructions to be abbreviated.
        A 3,DATA
-      MEND	---------> 	End of definition
+      MEND	--------> End of definition
 
 
 Formal systems

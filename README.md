@@ -99,10 +99,11 @@ Some widely used debuggers are:
 
 A **Loader** is the system program that place the object program into main memory and prepares it for execution. The loader is special program that takes input of object code from linker, loads it to main memory, and prepares this code for execution by computer. Loader allocates memory space to program. Even it settles down symbolic reference between objects. It in charge of loading programs and libraries in operating system. The embedded computer systems don’t have loaders. In them, code is executed through ROM.
 Basic functions of loader:
-- **Allocation:**
-- **Linking:** 
-- **Relocation:**
-- **Loading:**
+- **Allocation:** The space for program is allocated in the main memory, by calculating the size of the program.
+- **Linking:** It combines two or more separate object programs and supplies the necessary information.
+- **Relocation:** Modifies the object program so that it can be loaded at an address different from the location originally specified.
+- **Loading:** Brings the object program into memory for execution. 
+
 
 Types of the loaders are-
 

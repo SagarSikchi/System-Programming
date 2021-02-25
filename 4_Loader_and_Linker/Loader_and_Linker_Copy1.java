@@ -1,9 +1,8 @@
-/* 
- * Sagar Sikchi (65)
- * GR No.: 11810844
- * TYIT-A: Batch B2
- * System Programming: LAB 5 --> Loader & Linker
- * 
+/*
+ * Name: Sagar Sikchi
+ * Batch B2
+ * Roll No. 65
+ * Lab5: Loader and Linker
  */
 
 import java.io.FileReader;

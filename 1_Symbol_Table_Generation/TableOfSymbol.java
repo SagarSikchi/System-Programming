@@ -1,3 +1,10 @@
+/*
+ * Name: Sagar Sikchi
+ * Batch B2
+ * Roll No. 65
+ * Lab1: Symbol Table Generation
+ */
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;

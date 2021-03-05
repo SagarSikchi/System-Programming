@@ -86,8 +86,11 @@ public class Loader_and_Linker_Copy1 {
     private static String CalculateFileMemory(String FileName) {
         String length = "";
         try {
+            String filepath = "4_Loader_and_Linker\\" + FileName; // When to run this file from Parent Folder - System-Programming
+		    // String filepath = FileName; // When to run this file from this Folder - 4_Loader_and_Linker
+
             FileReader fptr;
-            fptr = new FileReader("C:\\Users\\hp\\Desktop\\System-Programming\\4_Loader_and_Linker\\" + FileName);
+            fptr = new FileReader(filepath);
             BufferedReader data = new BufferedReader(fptr);
             int total_length = 0;
             String string = null;
@@ -133,8 +136,11 @@ public class Loader_and_Linker_Copy1 {
         HashMap<String, List<String>> LVT = new HashMap<>();
         String string = null;
         try {
+            String filepath = "4_Loader_and_Linker\\" + FileName; // When to run this file from Parent Folder - System-Programming
+		    // String filepath = FileName; // When to run this file from this Folder - 4_Loader_and_Linker
+
             FileReader fptr;
-            fptr = new FileReader("C:\\Users\\hp\\Desktop\\System-Programming\\4_Loader_and_Linker\\" + FileName);
+            fptr = new FileReader(filepath);
             BufferedReader data = new BufferedReader(fptr);
             while ((string = data.readLine()) != null) {
                 string = string.trim();

@@ -120,8 +120,10 @@ public class MacroProcessor {
             Set_Default_Values(MDT);
             Set_Default_Values(ALA);
 
-            FileReader fptr = new FileReader(
-                    "C:\\Users\\hp\\Desktop\\System-Programming\\3_Macro_and_Nested_Macro\\MacroProcessorInput.txt");
+            String filepath = "3_Macro_and_Nested_Macro\\MacroProcessorInput.txt"; // When to run this file from Parent Folder - System-Programming
+		    // String filepath = "MacroProcessorInput.txt"; // When to run this file from this Folder - 3_Macro_and_Nested_Macro
+
+            FileReader fptr = new FileReader(filepath);
             BufferedReader data = new BufferedReader(fptr);
             while ((string = data.readLine()) != null) {
                 String[] words = string.split(" ");

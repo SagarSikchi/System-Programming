@@ -14,12 +14,12 @@ public class TableOfSymbol {
 
 	public static void main(String[] args) {
 
-		String filepath = "1_Symbol_Table_Generation\\input.txt"; // When to run this file from Parent Folder - System-Programming
-		// String filepath = "input.txt"; // When to run this file from this Folder - 1_SYMBOL_TABLE_GENERATION
+	String filepath = "1_Symbol_Table_Generation\\input.txt"; // When to run this file from Parent Folder - System-Programming
+	// String filepath = "input.txt"; // When to run this file from this Folder - 1_SYMBOL_TABLE_GENERATION
 		
         String line = null;
         int add = 0;
-		try {
+	try {
             FileReader fileReader = new FileReader(filepath);
 
             BufferedReader bufferedReader = new BufferedReader(fileReader);

@@ -13,16 +13,17 @@ import java.io.IOException;
 public class TableOfSymbol {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		// String filepath = "C:\\Users\\HP\\Desktop\\input.txt";
-		String filepath = "C:\\Users\\hp\\Desktop\\System-Programming\\1_Symbol_Table_Generation\\input.txt";
+
+		String filepath = "1_Symbol_Table_Generation\\input.txt"; // When to run this file from Parent Folder - System-Programming
+		// String filepath = "input.txt"; // When to run this file from this Folder - 1_SYMBOL_TABLE_GENERATION
+		
         String line = null;
-        int add=0;
+        int add = 0;
 		try {
             FileReader fileReader = new FileReader(filepath);
 
             BufferedReader bufferedReader = new BufferedReader(fileReader);
-//            System.out.printf("literal \t size \t address\n");
+			
             while((line = bufferedReader.readLine()) != null) {
             	if(line.contains("int ")) {
             		int index = line.indexOf("int ");
@@ -52,14 +53,11 @@ public class TableOfSymbol {
             		System.out.println("literal: "+line.substring(index+6,index+7)+ " datatype: int[] "+" size:" +count*4 +"address: "+add);
             		add=add+4*count;
             	}
-            	
-//                System.out.println(line);
             }   
-//            System.out.println(line);
             bufferedReader.close();         
         }
         catch(FileNotFoundException ex) {
-            System.out.println("Unable to open file: " + filepath);                
+            System.out.println("Unable to open file '" + filepath + "'");                
         }
         catch(IOException ex) {
             System.out.println("Error reading file '" + filepath + "'");                  

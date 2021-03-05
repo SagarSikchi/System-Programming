@@ -66,7 +66,7 @@ public class Assembler_Lab2 {
 
         try {
             String filepath = "2_Assembler_Pass_I_and_Pass_II\\Assembler_Input.txt"; // When to run this file from Parent Folder - System-Programming
-		    // String filepath = "Assembler_Input.txt"; // When to run this file from this Folder - 2_Assembler_Pass_I_and_Pass_II
+	    // String filepath = "Assembler_Input.txt"; // When to run this file from this Folder - 2_Assembler_Pass_I_and_Pass_II
 
             FileReader fptr = new FileReader(filepath);
             BufferedReader data = new BufferedReader(fptr);

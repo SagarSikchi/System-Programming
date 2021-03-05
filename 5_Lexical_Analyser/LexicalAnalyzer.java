@@ -41,10 +41,10 @@ public class LexicalAnalyzer {
         Map<String, List<String>> symbolTable = new HashMap<String, List<String>>();
         String str = null;
         try {
-            // FileReader fptr = new FileReader("E:\\Desktop Folders\\Sagar Files 2020\\SEM
-            // V TYIT\\IT3202 SP\\SP-LAB\\input.txt");
-            FileReader fptr = new FileReader(
-                    "C:\\Users\\hp\\Desktop\\System-Programming\\5_Lexical_Analyser\\input.c");
+            String filepath = "5_Lexical_Analyser\\input.c"; // When to run this file from Parent Folder - System-Programming
+		    // String filepath = FileName; // When to run this file from this Folder - 5_Lexical_Analyser
+
+            FileReader fptr = new FileReader(filepath);
             BufferedReader data = new BufferedReader(fptr);
             // Reads every line and then splits everything into lexemes
             while ((str = data.readLine()) != null) {
